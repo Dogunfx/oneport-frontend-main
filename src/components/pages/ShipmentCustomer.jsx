@@ -14,11 +14,16 @@ const ShipmentCustomer = () => {
   const [temData, setTemData] = useState([]);
 
   function handleShipmentType(evt) {
-    const newShipment = temData.filter((shipment) => {
-      if (shipment.shipping_type == evt.target.value) {
-        return shipment;
-      }
-    });
+    let newShipment;
+    if (evt.target.value != "") {
+      newShipment = temData.filter((shipment) => {
+        if (shipment.shipping_type == evt.target.value) {
+          return shipment;
+        }
+      });
+    } else {
+      newShipment = temData;
+    }
 
     setData(newShipment);
   }
@@ -65,6 +70,19 @@ const ShipmentCustomer = () => {
     setData(newShipment);
   }
 
+  function handleDateChange(evt) {
+    // will retrieve the shipment whose pickup date is greater than the selected date
+    var selected_date = new Date(evt.target.value);
+
+    const newShipment = temData.filter((shipment) => {
+      var shipment_date = new Date(shipment.shipment_pickup_date);
+      if (selected_date.getTime() <= shipment_date.getTime()) {
+        return shipment;
+      }
+    });
+    setData(newShipment);
+  }
+
   useEffect(() => {
     const fetchdatas = async () => {
       const res = await axios.get(
@@ -101,13 +119,13 @@ const ShipmentCustomer = () => {
         </div>
         <div className="shipment-type">
           <select name="" id="" onChange={handleShipmentType}>
-            <option value="Shipment Type">Shipment Type</option>
+            <option value="">Shipment Type</option>
             <option value="import">Import</option>
             <option value="export">Export</option>
           </select>
         </div>
         <div className="shipment-date">
-          <input type="date" />
+          <input type="date" onChange={handleDateChange} />
         </div>
         <div className="seach-input">
           <span>
