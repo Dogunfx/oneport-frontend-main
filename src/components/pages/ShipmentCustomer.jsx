@@ -14,8 +14,7 @@ const ShipmentCustomer = () => {
   const [temData, setTemData] = useState([]);
 
   function handleShipmentType(evt) {
-    
-    const newShipment = data.filter((shipment) => {
+    const newShipment = temData.filter((shipment) => {
       if (shipment.shipping_type == evt.target.value) {
         return shipment;
       }
@@ -30,6 +29,7 @@ const ShipmentCustomer = () => {
         "https://demo3522726.mockable.io/get_single_customer_shipments/123456789"
       );
       setData(res.data);
+      setTemData(res.data);
     };
     fetchdatas();
   }, []);
