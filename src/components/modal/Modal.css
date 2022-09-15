@@ -1,0 +1,117 @@
+.docs-Modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay {
+  background-color: rgba(49, 49, 49, 0.678);
+}
+.docs-Modal .modal-content {
+  background: #ffffff;
+  width: 756px;
+  height: 1080px;
+  padding: relative;
+  left: 595px;
+}
+
+.docs-Modal .closeIcon {
+  width: 39px;
+  height: 39px;
+  margin: 30px;
+}
+.modal-heading h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 30px;
+  color: #000000;
+}
+.modal-heading p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6b7280;
+  margin-left: 34px;
+}
+.select-docs h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 35px;
+  color: #111827;
+  margin-top: 56px;
+}
+.types-select {
+  padding: 10px 12px;
+  margin-left: 35px;
+  width: 688px;
+  height: 46px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.types-select p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9ca3af;
+}
+.upload-file {
+  padding: 16px;
+  width: 688px;
+  height: 124px;
+  background: #fafffb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  margin-top: 25px;
+  margin-left: 35px;
+  text-align: center;
+}
+.upload-file .iconAdd {
+  color: #3ab44a;
+  font-size: 34px;
+}
+
+.upload-file h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+.upload-file h6 span {
+  color: #3ab44a;
+}
+
+.upload-file p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6b7280;
+  margin-top: -2px;
+}
+
+.footer-modal button {
+  float: right;
+  margin-right: 32px;
+  width: 174px;
+  height: 56px;
+  background: #3ab44a;
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 22px;
+  color: #ffffff;
+}

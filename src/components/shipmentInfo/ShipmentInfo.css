@@ -1,0 +1,87 @@
+.shippingInfos .shipping-tbl {
+  border-collapse: collapse;
+  width: 1080px;
+  margin-top: 12px;
+  margin-left: 52px;
+  margin-bottom: 200px;
+}
+.shippingInfos .tblTitle {
+  display: flex;
+  flex-direction: row;
+  margin-top: 54px;
+  margin-left: 55px;
+}
+.shippingInfos .tblTitle h6 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+.shippingInfos .tblTitle h6:nth-child(1) {
+  padding-right: 45px;
+}
+.shippingInfos .tblTitle h6:nth-child(2) {
+  padding-right: 155px;
+}
+.shippingInfos .tblTitle h6:nth-child(3) {
+  padding-right: 115px;
+}
+.shippingInfos .tblTitle h6:nth-child(4) {
+  padding-right: 180px;
+}
+.shipping-tbl tbody tr {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  height: 80px;
+}
+.shipping-tbl tbody tr:hover {
+  background: rgba(236, 254, 244, 0.3);
+}
+
+.shipping-tbl td:nth-child(2) {
+  padding-right: 15px;
+  text-transform: capitalize;
+}
+.shipping-tbl td:nth-child(5) {
+  padding-left: 20px;
+}
+
+.shipping-tbl td {
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 800;
+  font-size: 14px;
+  color: #000000;
+}
+.shipping-tbl td p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #6b7280;
+  margin-top: -5px;
+  margin-bottom: -15px;
+  padding-left: none;
+}
+.shipping-tbl .arrup-icon {
+  background-color: #f0fdf4;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+.shipping-tbl .arrup-icon .icon {
+  font-size: 23px;
+  color: #3ab44a;
+  margin: 15px;
+}
+.shipping-tbl .btn-view {
+  padding: 8px 10px;
+  background: #3ab44a;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+}

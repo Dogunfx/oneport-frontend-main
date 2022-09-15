@@ -1,0 +1,124 @@
+.shipments-details {
+  margin-left: 112px;
+}
+.shipments-details .more-Info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 854px;
+  margin-top: 70px;
+}
+.shipments-details .icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.shipments-details .icon .left-icon {
+  width: 39px;
+  height: 39px;
+  background: #f9fafb;
+  border-radius: 24px;
+  padding: 10px;
+}
+.shipments-details .icon h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin-left: 33px;
+}
+.shipments-details .invoice-btn button {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #374151;
+  margin-right: 13px;
+}
+
+.shipments-details .export-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+  width: 854px;
+  height: 100px;
+  background: #3ab44a;
+  border-radius: 14px 14px 0px 0px;
+  margin-top: 30px;
+}
+
+.export-details .icon-arr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.export-details .icon-arr .icon-wrapper {
+  width: 34px;
+  height: 34px;
+  background: #f0fdf4;
+  border-radius: 35px;
+  color: #3ab44a;
+  font-size: 24px;
+  padding: 5px;
+}
+
+.export-details .icon-arr h3 {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-left: 13px;
+}
+
+.export-details h5 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+}
+.export-details p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.export-Info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 40px;
+  width: 854px;
+  height: 168px;
+  background: #f0fdf4;
+  border-radius: 0px 0px 14px 14px;
+}
+.export-Info p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+}
+.export-Info h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 34px;
+  color: #000000;
+}
+.export-Info h6 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+.export-Info .img-direction {
+  padding: 40px;
+}
