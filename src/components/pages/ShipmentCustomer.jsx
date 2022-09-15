@@ -23,6 +23,48 @@ const ShipmentCustomer = () => {
     setData(newShipment);
   }
 
+  function compareOtherProps(query, shipment) {
+    if (
+      String(shipment.origin_port_code)
+        .toLocaleLowerCase()
+        .includes(query) ||
+      String(shipment.origin_port_city)
+        .toLocaleLowerCase()
+        .includes(query) ||
+      String(shipment.origin_port_country)
+        .toLocaleLowerCase()
+        .includes(query) ||
+      String(shipment.destination_port_code)
+        .toLocaleLowerCase()
+        .includes(query) ||
+      String(shipment.destination_port_city)
+        .toLocaleLowerCase()
+        .includes(query) ||
+      String(shipment.destination_port_country)
+        .toLocaleLowerCase()
+        .includes(query) ||
+      String(shipment._id)
+        .toLocaleLowerCase()
+        .includes(query)
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function handleOtherSearch(evt) {
+    const searchWord = String(evt.target.value).toLocaleLowerCase();
+
+    const newShipment = temData.filter((shipment) => {
+      if (compareOtherProps(searchWord, shipment)) {
+        return shipment;
+      }
+    });
+
+    setData(newShipment);
+  }
+
   useEffect(() => {
     const fetchdatas = async () => {
       const res = await axios.get(
@@ -73,7 +115,11 @@ const ShipmentCustomer = () => {
           <span>
             <AiOutlineSearch />
           </span>
-          <input type="text" placeholder="search by shipment ID,Destination" />
+          <input
+            type="text"
+            onChange={handleOtherSearch}
+            placeholder="search by shipment ID,Destination"
+          />
         </div>
       </div>
       <ShipmentInfo shippingData={data} />
