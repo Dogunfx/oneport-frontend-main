@@ -107,9 +107,7 @@ const ShipmentCustomer = () => {
           </select>
         </div>
         <div className="shipment-date">
-          <select name="" id="">
-            <option value="Shipment Date">Shipment Date</option>
-          </select>
+          <input type="date" />
         </div>
         <div className="seach-input">
           <span>
