@@ -11,8 +11,10 @@ import axios from "axios";
 
 const ShipmentCustomer = () => {
   const [data, setData] = useState([]);
+  const [temData, setTemData] = useState([]);
 
   function handleShipmentType(evt) {
+    
     const newShipment = data.filter((shipment) => {
       if (shipment.shipping_type == evt.target.value) {
         return shipment;
